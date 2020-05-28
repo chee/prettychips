@@ -10,10 +10,10 @@ include $(DEVKITARM)/ds_rules
 export TARGET		:=	$(shell basename $(CURDIR))
 export TOPDIR		:=	$(CURDIR)
 export GAME_TITLE			:=	prettychips
-export GAME_ICON			:=      $(DEVKITPRO)/prettychips.bmp
-export GAME_SUBTITLE1		:=	holy rookies
+export GAME_ICON			:=	icon.bmp
+export GAME_SUBTITLE1		:=	love x
 export GAME_SUBTITLE2		:=	chee
-ICON 	:= -b $(DEVKITPRO)/prettychips.bmp
+ICON 	:= -b icon.bmp
 
 .PHONY: $(TARGET).arm7 $(TARGET).arm9
 

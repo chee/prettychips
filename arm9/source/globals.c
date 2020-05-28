@@ -1,4 +1,2 @@
-#include <nds.h>
 #include "globals.h"
-
-
+#include <nds.h>

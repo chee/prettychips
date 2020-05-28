@@ -1,5 +1,5 @@
-/*     Copyright 2009 Graeme Roberts :: 
-	prettychips is free software: you can redistribute it and/or modify
+/*     Copyright 2009 Graeme Roberts ::
+        prettychips is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
@@ -20,53 +20,50 @@
 
 // For calculating the notes.
 
-u16 notes[13];
-u16 keys[8];
-u16 root;
+extern u16 notes[13];
+extern u16 keys[8];
+extern u16 root;
 
-int scale;
-int octave;
-int curkey;
+extern int scale;
+extern int octave;
+extern int curkey;
 
-//Rhythm.
-int bpm;
-int hpm;
-int lpm;
-//for setting a PSG
-int ids[8];
-int wCycle;
-u8 nVolume;
-u8 nPan;
+// Rhythm.
+extern int bpm;
+extern int hpm;
+extern int lpm;
+// for setting a PSG
+extern int ids[8];
+extern int wCycle;
+extern u8 nVolume;
+extern u8 nPan;
 
-//other
-int cscreen;
-bool trem_on;
-bool rel_on;
+// other
+extern int cscreen;
+extern bool trem_on;
+extern bool rel_on;
 
-bool noteHeld[8];
+extern bool noteHeld[8];
 
+extern int volbent;
+extern float pitching;
+extern float ppeak;
+extern u8 vpeak;
+extern float whammy;
 
-int volbent;
-float pitching;
-float ppeak;
-u8 vpeak;
-float whammy;
+extern int trem_speed;
+extern u8 rlength;
+extern int bg3;
+extern int bg3sub;
+extern int killme[8];
+extern u8 myVolume[8];
+extern u8 myPan[8];
 
+extern bool wOval;
+extern bool fTri;
+extern int wovalate;
+extern int ftriangulate;
 
-int trem_speed;
-u8 rlength;
-int bg3;
-int bg3sub;
-int killme[8];
-u8 myVolume[8];
-u8 myPan[8];
+extern float noted[8];
 
-
-bool wOval;
-bool fTri;
-int wovalate;
-int ftriangulate;
-
-float noted[8];
-
-int drone;
+extern int drone;

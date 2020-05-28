@@ -1,0 +1,79 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+	    {
+		   "label": "make debug",
+		   "type": "process",
+		   "command": "make",
+		   "args": [
+			  "DEBUG=1"
+		   ],
+		   "problemMatcher": []
+	    },
+	    {
+		   "label": "make release",
+		   "type": "process",
+		   "command": "make",
+		   "args": [
+			  "DEBUG=0"
+		   ],
+		   "problemMatcher": [],
+		   "group": {
+			  "kind": "build",
+			  "isDefault": true
+		   }
+	    },
+	    {
+		   "label": "clean",
+		   "type": "process",
+		   "command": "make",
+		   "args": [
+			  "clean"
+		   ],
+		   "problemMatcher": []
+	    },
+	    {
+		   "label": "run",
+		   "type": "shell",
+		   "isBackground": true,
+		   "command": "/usr/games/desmume-cli",
+		   "args": [
+			  "${workspaceFolder}/${workspaceFolderBasename}.nds"
+		   ],
+		   "presentation": {
+			  "clear": true,
+			  "reveal": "always"
+		   },
+		   "problemMatcher": []
+	    },
+	    {
+		   "label": "gdb-debug",
+		   "type": "shell",
+		   "dependsOn": [
+			  "make debug"
+		   ],
+		   "isBackground": false,
+		   "command": "/usr/games/desmume-cli",
+		   "args": [
+			  "--arm9gdb=20000",
+			  "${workspaceFolder}/${workspaceFolderBasename}.nds"
+		   ],
+		   "presentation": {
+			  "clear": true,
+			  "reveal": "always"
+		   },
+		   "problemMatcher": []
+	    },
+	    {
+		   "label": "stop-emulation",
+		   "type": "shell",
+		   "command": "taskkill",
+		   "args": [
+			  "/FI",
+			  "imagename eq DeSmuME*"
+		   ],
+		   "problemMatcher": []
+	    }
+	]

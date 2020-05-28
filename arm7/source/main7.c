@@ -65,7 +65,7 @@ int main() {
 	irqInit();
 	fifoInit();
 
-	int channel = -1;
+	// int channel = -1;
 
 	// read User Settings from firmware
 	readUserSettings();

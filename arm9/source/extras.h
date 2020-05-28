@@ -1,5 +1,5 @@
-/*     Copyright 2009 Graeme Roberts :: 
-	prettychips is free software: you can redistribute it and/or modify
+/*     Copyright 2009 Graeme Roberts ::
+        prettychips is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
@@ -13,14 +13,14 @@
     along with prettychips.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include <nds.h>
+#include "globals.h"
 #include <math.h>
+#include <nds.h>
 
 float powfer(float x, float y);
-void chroot();
+void chrootnote();
 void makeNotes();
 void doKeys();
-
 
 void doWD(int wd);
 void doPAN(int pan);
@@ -34,3 +34,6 @@ void holdMe(int soundid);
 void killMe(int soundid);
 void LMe(int soundid);
 void PANIC();
+
+#define NOTEA 440
+#define TWELFTHROOT 1.0594630943593

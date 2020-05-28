@@ -1,5 +1,5 @@
-/*     Copyright 2009 Graeme Roberts :: 
-	prettychips is free software: you can redistribute it and/or modify
+/*     Copyright 2009 Graeme Roberts ::
+        prettychips is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
@@ -14,14 +14,14 @@
 */
 
 // includes
+#include "nds/fifomessages.h"
+#include <math.h>
 #include <nds.h>
 #include <stdio.h>
-#include <math.h>
-#include "nds/fifomessages.h"
 
 // My headers.
-#include "mytimers.h"
+#include "extras.h"
 #include "globals.h"
 #include "menus.h"
+#include "mytimers.h"
 #include "topscreen.h"
-#include "extras.h"

@@ -1,0 +1,29 @@
+{
+	"configurations": [
+		{
+			"name": "NDS",
+			"forcedInclude": ["${workspaceFolder}/include/vscode_fix.h"],
+			"includePath": [
+				"${workspaceFolder}",
+				"${workspaceFolder}/include/**",
+				"/opt/devkitpro/libnds/include/**",
+				"/opt/devkitpro/devkitARM/arm-none-eabi/include/**"
+			],
+			"defines": ["_DEBUG", "_UNICODE", "WIN32", "ARM7", "ARM9"],
+			"browse": {
+				"path": [
+					"${workspaceFolder}",
+					"${workspaceFolder}/include/**",
+					"/opt/devkitpro/libnds/include/**",
+					"/opt/devkitpro/devkitARM/arm-none-eabi/include/**"
+				],
+				"limitSymbolsToIncludedHeaders": true,
+				"databaseFilename": ""
+			},
+			"cStandard": "c11",
+			"cppStandard": "c++11",
+			"compilerPath": "/opt/devkitpro/devkitARM/bin/arm-none-eabi-g++"
+		}
+	],
+	"version": 4
+}
