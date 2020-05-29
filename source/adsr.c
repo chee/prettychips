@@ -21,6 +21,7 @@
 
 #include "adsr.h"
 #include <math.h>
+#include <nds.h>
 
 void initADSR(ADSR *ptr) {
   resetADSR(ptr);
@@ -124,7 +125,7 @@ int getState(ADSR *ptr) { return ptr->state; }
 
 void resetADSR(ADSR *ptr) {
   ptr->gate = 0;
-  ptr->state = env_attack;
+  ptr->state = env_idle;
   ptr->output = 0.0;
 }
 

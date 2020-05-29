@@ -1,2 +1,2 @@
-UseTab: ForIndentation
+UseTab: Never
 BreakBeforeBraces: Attach

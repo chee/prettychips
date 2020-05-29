@@ -18,9 +18,6 @@
 //  purposes, free or commercial.
 //
 
-#ifndef ADRS_h
-#define ADRS_h
-
 enum envState {
   env_idle = 0,
   env_attack,
@@ -62,4 +59,3 @@ void setTargetRatioA(ADSR *ptr, float targetRatio);
 void setTargetRatioDR(ADSR *ptr, float targetRatio);
 void resetADSR(ADSR *ptr);
 void initADSR(ADSR *ptr);
-#endif
